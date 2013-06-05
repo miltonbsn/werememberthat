@@ -23,29 +23,34 @@
 
 
 		<g:HTMLPanel styleName="content login">
-			<div class="loginForm">
-				<h2>Login!</h2>
-				<form ui:field="divLogin">
-					<g:TextBox ui:field="loginTextBox" />
-					<g:PasswordTextBox ui:field="passTextBox" />
-					<g:Anchor text="Go!" styleName="button" ui:field="enterLoginButton" />
-				</form>
-				<g:Anchor text="Register" ui:field="registerUser" />
-				<g:Anchor text="I forgot..." ui:field="forgotPasswordAnchor" />
+			<div class="public-container">
+				<div class="public-card">
+					<div class="public-form front face">
+							<h2>Login!</h2>
+	 						<form ui:field="divLogin">
+								<g:TextBox ui:field="loginTextBox" />
+								<g:PasswordTextBox ui:field="passTextBox" />
+								<g:Anchor text="Go!" styleName="button" ui:field="enterLoginButton" />
+								<div class="public-form-links">
+									<g:Anchor text="Register" ui:field="registerUser" />
+									<g:Anchor text="Forgot?" ui:field="forgotPasswordAnchor" />
+								</div>
+	 						</form>
+					</div>
+		
+					<div class="public-form back face">
+							<h2>Register</h2>
+							<form>
+								<g:TextBox ui:field="registerTextBox" />
+								<g:PasswordTextBox ui:field="passwordTextBox" />
+								<g:Anchor ui:field="saveButton" styleName="button" text="Salvar" />
+								<div class="public-form-links">
+									<g:Anchor ui:field="cancelAnchor" text="Cancelar" />
+								</div>
+							</form>
+					</div>
+				</div>
 			</div>
-		</g:HTMLPanel>
-
-
-		<g:HTMLPanel styleName="overlay register">
-			<h2>Register</h2>
-			<form>
-				<!-- <g:Label text="Login: " /> -->
-				<g:TextBox ui:field="registerTextBox" />
-				<!-- <g:Label text="Senha: " /> -->
-				<g:PasswordTextBox ui:field="passwordTextBox" />
-				<g:Anchor ui:field="saveButton" styleName="button" text="Salvar" />
-			</form>
-			<g:Anchor ui:field="cancelAnchor" styleName="cancel" text="Cancelar" />
 		</g:HTMLPanel>
 
 	</g:HTMLPanel>

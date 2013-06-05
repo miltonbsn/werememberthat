@@ -146,28 +146,62 @@ input[type="password"] {
 	text-align: center;
 }
 
-.loginForm {
-	display: inline-block;
-	text-align: left;
-	margin-top: 100px;
-	
-	background: rgba(0,0,0,0.2);
-	padding: 70px 100px;
-	box-shadow: 0px 0px 0 10px rgba(255,255,255,0.3);
-}
-
-.loginForm input[type="text"] {
+.public-form input[type="text"] {
 	display: block;
 	margin-bottom: 10px;
 }
 
-.loginForm .button {
-	margin-left: 10px;
+.public-form .button {
+	margin: 10px 0;
+	float: left;
 }
 
-.loginForm > a {
-	margin: 10px 10px 0 0;
+.public-form .public-form-links {
+	margin: 10px 0;
+	float: right;
+}
+
+.public-form .public-form-links a {
+	width: 100%;
+	text-align: right;
 	display: inline-block;
+}
+
+.public-form .public-form-links a:hover {
+	text-decoration: underline;
+}
+
+/* .flip */
+/***************************/
+.public-container { 
+	display: inline-block;
+} 
+	
+.public-container { 
+	-webkit-perspective: 1000;
+}
+
+.public-card {
+	margin-top: 100px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 0.5s linear;
+	display: inline-block;
+	background: rgba(0,0,0,0.2);
+	/* padding: 70px 100px; */
+	box-shadow: 0px 0px 0 10px rgba(255,255,255,0.3);
+	
+}
+
+.face {
+	-webkit-backface-visibility: hidden;
+}
+
+.face.back {
+	-webkit-transform: rotateY(180deg);
+}
+
+.public-container.flip .public-card {
+	-webkit-transform: rotateY(180deg);
 }
 
 /***********************************************************/
@@ -177,23 +211,6 @@ input[type="password"] {
 	background: rgba(0,0,0,0.2);
 	padding: 70px 100px;
 	box-shadow: 0px 0px 0 10px rgba(255,255,255,0.3);
-}
-
-/***********************************************************/
-/* .register */
-/***********************************************************/
-.register input[type="text"] {
-	display: block;
-	margin-bottom: 10px;
-}
-
-.register .button {
-	margin-left: 10px;
-}
-
-.register > a {
-	display: inline-block;
-	margin-top: 10px;
 }
 
 /***********************************************************/

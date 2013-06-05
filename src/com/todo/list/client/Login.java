@@ -29,6 +29,12 @@ public class Login extends Composite {
 		loginTextBox.getElement().appendChild(new TextBox().getElement());
 		
 		main.getElement().setId("mainA");
+		
+		saveButton.getElement().setId("saveUser");
+		cancelAnchor.getElement().setId("cancelUser");
+		registerUser.getElement().setId("registerUser");
+		
+		
 	}
 	
 	@UiField Anchor enterLoginButton;

@@ -1,17 +1,32 @@
 $(document).ready(function() {
 
-	//Add new iten (Open)
+	//Add new item (Open)
    $(document.body).on('click', '.newReminder h2', function() {
    	$(this).parent('.newReminder').addClass('active');
    	$('.entry').slideDown('slow');
 	});
    	
-	//Add new iten (Close)
-   $(document.body).on('click', '.newReminder.active h2', function() {
-   	$(this).parent('.newReminder').removeClass('active');
-   	$('.entry').slideUp('slow');
-	});
+	//Add new item (Close)
+   $(document.body).on('click', '#saveUser', function() {
+	flip();
+   });
 
+   
+   $(document.body).on('click', '#cancelUser', function() {
+	   flip();
+	   // A2
+   });
+   
+   $(document.body).on('click', '#registerUser', function() {
+	   flip();
+	   // A1
+	   
+   });
+   
+   function flip() {
+	   $(".public-container").toggleClass("flip");
+   }
+   
    //Drag and Drop test
    $('.sortable').sortable({
      revert: true,
