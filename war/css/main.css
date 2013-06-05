@@ -1,0 +1,295 @@
+/***********************************************************/
+/* Main formatation */
+/***********************************************************/
+html{
+  background-color: #F6C372;
+  background-image: url("../images/wallpapers/bg1.jpg");
+  background-position: center bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body{
+  font-size: 10pt;
+  font-family: 'Oxygen', sans-serif;
+  color: rgba(255,255,255, 1);
+}
+
+#todo-container {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Courgette', cursive;}
+
+a,
+button {
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"] {
+	padding: 5px 10px;
+	border: solid 1px rgba(0,0,0, 0.1);
+	margin: 0;
+}
+
+.button {
+	padding: 5px 10px;
+	background: rgba(0,0,0, 0.5);
+	box-shadow: 2px 2px 2px 1px rgba(255,255,255, 0.5)
+}
+
+.button:hover {
+	background: rgba(0,0,0, 0.3);
+	text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+}
+
+/***********************************************************/
+/* .mainHeader */
+/***********************************************************/
+.mainHeader {
+  position: relative;
+  background: rgba(0,0,0, 0.3);
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255, 0.8);
+  box-shadow: 0 1px 3px rgba(0,0,0, 0.5);
+}
+
+.mainHeader h1 {
+  float: left;
+  margin-right: 15px;
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.mainHeader .tagline {
+  display: inline-block;;
+  vertical-align: middle;
+  font-weight: normal;
+  padding-left: 15px;
+  border-left: 1px solid #fff;
+}
+
+.mainHeader .tagline,
+.mainHeader .userOptions > strong { line-height: 2em;}
+
+/***********************************************************/
+/* .userOptions */
+/***********************************************************/
+.mainHeader .userOptions {
+  position: relative;
+  float: right;
+  width: 90px;
+}
+
+.mainHeader .userOptions:hover {
+  box-shadow: 0 0 3px rgba(0,0,0, 0.3);
+}
+
+.userOptions > strong {
+  display: block;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.userOptions:hover > strong {background: rgba(0,0,0, 0.3);}
+
+.userOptions:hover > strong + div {display: block;}
+.userOptions > strong + div {
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 100%;
+  background: rgba(0,0,0, 0.3);
+  box-shadow: 0 2px 2px rgba(0,0,0, 0.3);
+}
+
+.userOptions  ul {
+  list-style: none;
+}
+
+.userOptions ul li {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.userOptions ul li:hover {
+  background: rgba(0,0,0, 0.5);
+}
+
+/***********************************************************/
+/* .content */
+/***********************************************************/
+.content h2 {
+  font-size: 2em;
+  margin-bottom: 0.4em;
+  text-shadow: 0 0 4px rgb(0, 0, 0);
+}
+
+/***********************************************************/
+/* .login */
+/***********************************************************/
+.content.login {
+	text-align: center;
+}
+
+.loginForm {
+	display: inline-block;
+	text-align: left;
+	margin-top: 100px;
+	
+	background: rgba(0,0,0,0.2);
+	padding: 70px 100px;
+	box-shadow: 0px 0px 0 10px rgba(255,255,255,0.3);
+}
+
+.loginForm input[type="text"] {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.loginForm .button {
+	margin-left: 10px;
+}
+
+.loginForm > a {
+	margin: 10px 10px 0 0;
+	display: inline-block;
+}
+
+/***********************************************************/
+/* .overlay */
+/***********************************************************/
+.overlay {
+	background: rgba(0,0,0,0.2);
+	padding: 70px 100px;
+	box-shadow: 0px 0px 0 10px rgba(255,255,255,0.3);
+}
+
+/***********************************************************/
+/* .register */
+/***********************************************************/
+.register input[type="text"] {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.register .button {
+	margin-left: 10px;
+}
+
+.register > a {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+/***********************************************************/
+/* .newReminder */
+/***********************************************************/
+.newReminder {
+  position: relative;
+  margin-bottom: 5.5em;
+  background: rgba(0,0,0, 0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0, 0.5);
+}
+
+.newReminder h2 {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -109px;
+  padding: 10px 20px;
+  background: rgba(0,0,0, 0.1);
+  box-shadow: 0 1px 2px rgba(0,0,0, 0.5);
+  text-shadow: 0 0 0 transparent;
+  text-align: center;
+  cursor: pointer;
+}
+
+.newReminder h2:hover {
+  background: rgba(0,0,0, 0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0, 0.5);
+}
+
+.newReminder .entry {
+  display: none;
+  position: relative;
+  font-size: 1.5em;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0, 0.5);
+  border: 1px solid rgba(0,0,0, 0.5);
+  margin: 20px;
+}
+
+.entry a {
+	display: none;
+}
+
+.entry input[type="text"] {
+  width: 100%;
+  font-size: 1.4em;
+  border-width: 0;
+  padding: 10px;
+  margin-bottom: 0;
+  box-shadow: 0 0 0 transparent;
+}
+
+.entry > button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 1em;
+  border-width: 0;
+  border-left: 1px solid rgba(0,0,0, 0.5);
+  padding: 6px 15px;
+  box-shadow: 1px 2px 1px rgba(255,255,255, 1) inset
+}
+
+.entry > button:hover {
+  box-shadow: 0 0 0 transparent;
+}
+
+/***********************************************************/
+/* .itemToRemember */
+/***********************************************************/
+.itemToRemember {
+  position: relative;
+  font-size: 1.3em;
+  padding: 10px 30px;
+  text-align: left;
+  background: rgba(0,0,0, 0.1);
+  margin-bottom: 2px;
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.4);
+}
+
+.itemToRemember:hover {
+  background: rgba(0,0,0, 0.3);
+  text-shadow: 1px 1px 2px rgba(0,0,0, 0.8);
+}
+
+.itemToRemember:hover > button {opacity: 1;}
+.itemToRemember > button {
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.itemToRemember a {
+	float: right;
+}

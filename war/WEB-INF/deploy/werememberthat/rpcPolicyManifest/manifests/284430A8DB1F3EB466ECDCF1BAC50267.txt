@@ -1,0 +1,2 @@
+serviceClass: com.todo.list.client.GreetingService
+path: 9EA3A27135F7FA709456D5EFD76BBE1F.gwt.rpc
