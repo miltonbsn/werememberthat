@@ -1,13 +1,1 @@
-*~
-*/web-app/gwt
-*/web-app/WEB-INF/classes
-target
-
-# gwt caches and compiled units #
-gwt-unitCache/
-
-# more caches and things from deploy #
-war/WEB-INF/deploy/
-war/WEB-INF/classes/
-
 
